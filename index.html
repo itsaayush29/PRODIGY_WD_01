@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>St. Ann's School</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="head1">
+            <div class="school">St. Ann's Higher Secondary School</div>
+        </div>
+        <div class="head2">
+            <div class="row">
+                <a href="#about">ABOUT</a>
+                <a href="#">ACADEMICS</a>
+                <a href="#">ADMISSIONS</a>
+                <a href="#">STUDENT LIFE</a>
+                <a href="#">STAFF</a>
+                <a href="#contact">CONTACT US</a>
+    </header>
+    <div class="hero-section"></div>
+    <div class="main" id = "about">
+        <div class="container">
+            <h1> Explore Saint Ann's </h1>
+            <i class="fa-solid fa-school"></i>
+            <p>We're proud to offer a unique educational experience designed to enhance intellectual growth and promote participatory engagement. Take a look through our site to learn more about us.</p>
+        </div>
+    </div>
+    <div class="facility1">
+        <h1>Facilities</h1>
+        <p>The campus and facilities have been specifically designed to enhance learning</p>
+    </div>
+    <div class="facility">
+        <div class="facility-img">
+            <div class="box box1"></div>
+            <div class="box box2"></div>
+            <div class="box box3"></div>
+            <div class="box box4"></div>
+            <div class="box box5"></div>
+            <div class="box box6"></div>
+            <div class="box box7"></div>
+            <div class="box box8"></div>
+        </div>
+    </div>
+    <footer>
+        <div class="contact" id="contact">
+            <div class="Contact-us">
+                Contact us
+            </div>
+            <p>Indiranagar, Basanpali, Tamnar Rd, Tamnar, Chhattisgarh 496107</p>
+            <p>Itsaayush2912@gmail.com</p>
+            <p>6267845383</p>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3696.7475787469457!2d83.4322571750276!3d22.097454950217845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a2737e501270fd9%3A0xb8001283fd23a094!2sSt.%20Ann&#39;s%20Higher%20Secondary%20School!5e0!3m2!1sen!2sin!4v1693121937503!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="copyright">
+            Copyright© 2023. Design By Aayush Gupta
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            window.onscroll = function () {
+                var header = document.querySelector("header");
+                header.classList.toggle("scrolled", window.scrollY > 0);
+            };
+
+            // Add smooth scrolling to anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
